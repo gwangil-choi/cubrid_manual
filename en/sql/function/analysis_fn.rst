@@ -1166,7 +1166,7 @@ The NTILE function equally divides the grade based on the number of rows, regard
 
     SELECT name, score, NTILE(5) OVER (ORDER BY score DESC) grade 
     FROM t_score 
-    ORDER BY name;
+    ORDER BY grade;
 
 ::
 
